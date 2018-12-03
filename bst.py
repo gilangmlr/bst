@@ -2,7 +2,7 @@ class Node(object):
   def __init__(self, _key, _value = None):
     self.key = _key
     self.value = _value
-    self.parent == None
+    self.parent = None
     self.left = None
     self.right = None
   
@@ -25,7 +25,7 @@ class BinarySearchTree(object):
 
     return curr_node
   
-  def insert(self, key, value=None):
+  def insert(self, key, value = None):
     prev_node = None
     curr_node = self.root
 
